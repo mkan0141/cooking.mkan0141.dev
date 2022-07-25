@@ -1,19 +1,14 @@
-import { h } from 'preact'
+import { h, Fragment } from 'preact'
+
+import { Header } from './components/header'
+import { Container } from './components/container'
 
 export function App(props: any) {
   return (
     <>
-      <p>Hello Vite + Preact!</p>
-      <p>
-        <a
-          class="link"
-          href="https://preactjs.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Preact
-        </a>
-      </p>
+      <Container>
+        <Header />
+      </Container>
     </>
   )
 }
